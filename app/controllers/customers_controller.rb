@@ -7,6 +7,7 @@ class CustomersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @customers }
+      format.xml { render xml: @customers }
     end
   end
 
@@ -18,6 +19,7 @@ class CustomersController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @customer }
+      format.xml { render xml: @customer }
     end
   end
 
@@ -29,6 +31,7 @@ class CustomersController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @customer }
+      format.xml { render xml: @customer }
     end
   end
 
@@ -46,9 +49,11 @@ class CustomersController < ApplicationController
       if @customer.save
         format.html { redirect_to @customer, notice: 'Customer was successfully created.' }
         format.json { render json: @customer, status: :created, location: @customer }
+        format.xml { render xml: @customer, status: :created, location: @customer }
       else
         format.html { render action: "new" }
         format.json { render json: @customer.errors, status: :unprocessable_entity }
+        format.xml { render xml: @customer.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -62,9 +67,11 @@ class CustomersController < ApplicationController
       if @customer.update_attributes(params[:customer])
         format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }
         format.json { head :no_content }
+        format.xml { head :no_content }
       else
         format.html { render action: "edit" }
         format.json { render json: @customer.errors, status: :unprocessable_entity }
+        format.json { render xml: @customer.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -78,6 +85,7 @@ class CustomersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to customers_url }
       format.json { head :no_content }
+      format.xml { head :no_content }
     end
   end
 end
