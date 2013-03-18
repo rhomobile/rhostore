@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  first: MyString
-  last: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
+  first: Bill
+  last: Gates
+  email: bill@microsoft.com
+  phone: +12345678900
+  address: 1 Microsoft Way
+  city: Redmond
+  state: WA
+  zip: 98052
 
 two:
-  first: MyString
-  last: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
+  first: Tim
+  last: Cook
+  email: tim@apple.com
+  phone: +10098765432
+  address: 1 Infinite Loop
+  city: Cupertino
+  state: CA
+  zip: 95014

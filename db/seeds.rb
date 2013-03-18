@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'active_record/fixtures'
 
-ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "products")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", ["products","customers"])
