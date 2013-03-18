@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  sku: MyString
-  name: MyString
-  brand: MyString
-  price: MyString
-  quantity: MyString
+  sku: 1234
+  name: iPhone 5
+  brand: Apple
+  price: $199
+  quantity: 1
 
 two:
-  sku: MyString
-  name: MyString
-  brand: MyString
-  price: MyString
-  quantity: MyString
+  sku: 5678
+  name: Galaxy S3
+  brand: Samsung
+  price: $199
+  quantity: 2
